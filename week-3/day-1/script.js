@@ -18,7 +18,12 @@ console.log(typeof exampleName);     // typeof tells you the type
 const Name = "Callie's Cuisine";   // string (text)
 const Years = 5;              // number
 const IsOpen = true;          // boolean (true or false)
-
+// Log variables
+console.log(Name, Years, IsOpen);
+console.log(typeof Name);     // typeof tells you the type
+console.log(typeof Years);    // typeof tells you the type
+console.log(typeof IsOpen);   // typeof tells you the type
+  
 // ---------- Step 2: An array (a list) ----------
 // Example:
 const exampleMenu = ["taco", "burrito", "nachos"];
