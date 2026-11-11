@@ -55,6 +55,7 @@ console.log("Step 3 text:", exampleJson);
 console.log("Step 3 object:", exampleParsed);
 console.log("Step 3 price:", exampleParsed.price);
 
+
 // TODO: Write a JSON string for one of YOUR menu items. Parse it. Log one property.
 const Json = '{"name": "hot dog", "price": 7.5}';
 const Parsed = JSON.parse(Json);
