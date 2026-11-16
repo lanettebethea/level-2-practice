@@ -4,10 +4,10 @@
 
 // TODO first: replace this menu with YOUR truck's menu (keep the same shape).
 const menu = [
-  { name: "Taco", price: 4.5 },
-  { name: "Burrito", price: 9 },
-  { name: "Nachos", price: 6.25 },
-  { name: "Churro", price: 3 },
+  { name: "Hot Dog", price: 7.5 },
+  { name: "Hamburger", price: 8.0 },
+  { name: "Sausage", price: 7.75 },
+  { name: "Cheeseburger", price: 8.5 },
 ];
 
 
@@ -18,7 +18,13 @@ for (let i = 0; i < menu.length; i++) {
 }
 
 // TODO: Write a for loop that logs every item's PRICE.
+for (let i = 0; i < menu.length; i++) {
+  console.log(menu[i].price);
+}
 
+for (let i = 0; i < menu.length; i++) {
+  console.log(menu[i].name + " costs $" + menu[i].price);
+}
 
 // ---------- Step 2: forEach ----------
 // Same job, shorter to write. forEach hands you each item, one at a time.
@@ -28,7 +34,9 @@ menu.forEach(function (item) {
 });
 
 // TODO: Use forEach to log a sentence for each item, like "Taco costs $4.5".
-
+//menu.forEach(function (item) {
+//  menuText.textContent = menuText.textContent + item.name + ": $" + item.price + "\n";
+//});
 
 // ---------- Step 3: Put the menu on the page ----------
 // Example: one item, made safely with createElement + textContent.
@@ -44,7 +52,11 @@ list.appendChild(exampleLi);
 // ---------- Step 4: A loop that adds up ----------
 // TODO: Use a for loop to add up every price into a total. Log the total.
 // Hint: start with  let total = 0;  then add each price inside the loop.
-
+let total = 0;
+for (let i = 0; i < menu.length; i++) {
+  total = total + menu[i].price;
+}
+console.log("Total:", total);
 
 // ---------- Extra practice (if you finish early) ----------
 // 1. Count how many items cost less than $5 (a loop + an if).
